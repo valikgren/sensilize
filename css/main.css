@@ -1,5 +1,5 @@
 /* base styles*/
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -7,7 +7,7 @@ html, body {
     background: none;
     width: 100%;
     height: 100%;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto Condensed, sans-serif;
 }
 img {
     max-width: 100%;
@@ -27,13 +27,17 @@ img {
     top: 0;
     width: 100%;
     z-index: 12;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.02))
+    /*background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.02))*/
 }
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 96px;
+}
+.header_logo{
+    width: 230px;
+    height: auto;
 }
 .header-nav_link {
     font-weight: normal;
@@ -57,6 +61,7 @@ img {
     width: 100%;
     background-image: url(../images/top-bg.jpg);
     background-size: cover;
+    background-position: top center;
     min-height: 825px;
     position: relative;
     z-index: 1;
@@ -74,7 +79,8 @@ img {
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(360deg, #1E1E1E 0%, rgba(0, 0, 0, 0.1) 49.09%, #1E1E1E 92.66%);
+    /*background: linear-gradient(360deg, #212933 0%, rgba(0, 0, 0, 0.1) 49.09%, #212933 92.66%);*/
+    background: rgba(27, 31, 37, 0.4);
 }
 
 .top-section-content_title {
@@ -90,6 +96,7 @@ img {
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+    font-weight: normal;
 }
 
 .top-section-content_form{
@@ -131,7 +138,7 @@ img {
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
-    color: #1E1E1E;
+    color: #212933;
     letter-spacing: -1px;
 }
 
@@ -142,7 +149,7 @@ img {
     z-index: 2;
     margin-top: -1px;
     padding: 132px 0;
-    background: #1E1E1E;
+    background: #1B1F25;
 }
 .about-section-container {
     display: flex;
@@ -178,27 +185,27 @@ img {
     margin-top: 24px;
     font-size: 14px;
     line-height: 18px;
-    color: #9B9B9B;
+    color: #697F9C;
 }
 
 
 /* solution */
 .solution-section {
-    background-color: #F8F8F8;
+    background-color: #F3F8FF;
     padding: 110px 0;
 }
 .solution-section_title{
     font-weight: bold;
     font-size: 48px;
     text-align: center;
-    color: #1E1E1E;
+    color: #212933;
 }
 .solution-section_description{
     margin: 10px auto 0 auto;
     text-align: center;
     font-size: 16px;
     line-height: 23px;
-    color: #7C7C7C;
+    color: #697F9C;
     max-width: 622px;
 }
 .solution-section_container{
@@ -226,13 +233,13 @@ img {
     font-weight: bold;
     font-size: 24px;
     line-height: 20px;
-    color: #1E1E1E;
+    color: #212933;
 }
 .solution-section-item_description{
     margin-top: 16px;
     font-size: 14px;
     line-height: 20px;
-    color: #1E1E1E;
+    color: #212933;
 }
 
 
@@ -361,7 +368,7 @@ img {
 
 
 .footer {
-    background-color: #1E1E1E;
+    background-color: #212933;
     padding: 100px 0 48px 0;
 }
 
@@ -402,10 +409,10 @@ img {
 .footer-form_input:nth-child(1){
     margin-top: 0;
 }
-.footer-form_input::placeholder          { color: #7C7C7C}
-.footer-form_input::-moz-placeholder     { color: #7C7C7C}
-.footer-form_input:-moz-placeholder      { color: #7C7C7C}
-.footer-form_input:-ms-input-placeholder { color: #7C7C7C}
+.footer-form_input::placeholder          { color: #697F9C}
+.footer-form_input::-moz-placeholder     { color: #697F9C}
+.footer-form_input:-moz-placeholder      { color: #697F9C}
+.footer-form_input:-ms-input-placeholder { color: #697F9C}
 
 .footer-form_input, .footer-form_submit, .footer-form_textarea{
     max-width: 100%;
@@ -416,10 +423,10 @@ img {
 .footer-form_textarea{
     height: 102px;
 }
-.footer-form_textarea::placeholder          { color: #7C7C7C; font-size: 18px}
-.footer-form_textarea::-moz-placeholder     { color: #7C7C7C; font-size: 18px}
-.footer-form_textarea:-moz-placeholder      { color: #7C7C7C; font-size: 18px}
-.footer-form_textarea:-ms-input-placeholder { color: #7C7C7C; font-size: 18px}
+.footer-form_textarea::placeholder          { color: #697F9C; font-size: 18px}
+.footer-form_textarea::-moz-placeholder     { color: #697F9C; font-size: 18px}
+.footer-form_textarea:-moz-placeholder      { color: #697F9C; font-size: 18px}
+.footer-form_textarea:-ms-input-placeholder { color: #697F9C; font-size: 18px}
 
 .footer-form_submit{
     background: #96DC56;
@@ -429,7 +436,7 @@ img {
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
-    color: #1E1E1E;
+    color: #212933;
     letter-spacing: -1px;
 }
 
@@ -647,6 +654,6 @@ img {
         margin-top: 50px;
     }
     .footer-bottom_copyright{
-        color: #7C7C7C;
+        color: #697F9C;
     }
 }
